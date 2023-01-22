@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preload Example</title>
+
+    <!--Preload JS File -->
+    <!--     <link rel="preload" as="image" href="../google.png" />
+ -->
+    <link rel="preload" as="script" href="./assets/js/main-v1.js" />
+
+    <link rel="stylesheet" href="./assets/css/styles-v1.css" />
+    <link rel="stylesheet" href="./assets/css/styles-v2.css" />
+
+    <script>
+      console.log("Inline Script");
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to Preload Example</h1>
+    <img
+      fetchpriority="highest"
+      width="1200"
+      height="400"
+      src="../google.png"
+      alt="Google"
+    />
+  </body>
+</html>
+
+<script src="./assets/js/main-v1.js"></script>
